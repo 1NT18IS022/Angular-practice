@@ -21,6 +21,7 @@ export class AppComponent {
     password: new FormControl(),
   });
   get username() {
+    console.log(this.form.get('username'));
     return this.form.get('username');
   }
 }
